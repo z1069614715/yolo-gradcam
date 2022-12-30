@@ -95,7 +95,7 @@ class yolov5_heatmap:
 
             # add heatmap and box to image
             cam_image = show_cam_on_image(img.copy(), saliency_map, use_rgb=True)
-            cam_image = self.draw_detections(post_boxes[i], self.colors[int(post_result[i, 1:].argmax())], self.model_names[int(post_result[i, 1:].argmax())], cam_image)
+            cam_image = self.draw_detections(post_boxes[i], self.colors[int(post_result[i, 1:].argmax())], f'{self.model_names[int(post_result[i, 1:].argmax())]} {post_result[i][0]:.2f}', cam_image)
             cam_image = Image.fromarray(cam_image)
             cam_image.save(f'{save_path}/{i}.png')
 
