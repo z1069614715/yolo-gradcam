@@ -7,7 +7,7 @@ yolo model with gradcam visual.
 2. yolov7-[哔哩哔哩地址](https://www.bilibili.com/video/BV1oD4y1j7KH/)
 
 ## 环境
-pip install pytorch_grad_cam
+pip install grad-cam
 
 ## 注意事项
 1. yolov5是在v7.0进行编写和测试的。
